@@ -1,20 +1,59 @@
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #212121;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+  }
 }
 
 header {
-  background-color: #ffffff;
+  background-color: white;
+  width: 1600px;
 }
 
+.container {
+  display: flex;
+  border: 1px solid white;
+  border-bottom-color: #ececec;
+  align-items: center;
+  
+}
+
+.menu {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  justify-content: space-around;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.logo-place-header{
+  padding-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-right: 93px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .title-background {
   background-color: #2f303a;
   box-sizing: border-box;
-
+  border: 1px none;
   width: 1600px;
   height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
@@ -27,6 +66,11 @@ header {
   text-decoration: none;
 }
 
+.logo-place{
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 20px;
+}
 .first-word {
   color: #2196f3;
 }
@@ -34,7 +78,7 @@ header {
 .second-word {
   color: #000000;
 }
-.nav {
+.nav-first {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -43,15 +87,69 @@ header {
   text-align: left;
   text-decoration: none;
   color: #212121;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 46px;
 }
 
-.nav:hover,
-.nav:focus {
+.nav-first:hover,
+.nav-first:focus {
   color: #2196f3;
   text-decoration: none;
 }
 
-.contact {
+.nav-second {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1, 14285714;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: #212121;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 46px;
+}
+
+.nav-second:hover,
+.nav-second:focus {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.nav-third {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1, 14285714;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: #212121;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 371px;
+}
+
+.nav-third:hover,
+.nav-third:focus {
+  color: #2196f3;
+  text-decoration: none;
+}
+.contact-mail {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
@@ -60,12 +158,36 @@ header {
   text-align: left;
   text-decoration: none;
   color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 50px;
 }
-.contact:hover,
-.contact:focus {
+
+.contact-mail:hover,
+.contact-mail:focus {
   color: #2196f3;
   text-decoration: none;
 }
+
+.contact-tel {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1, 14285714;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
+.contact-tel:hover,
+.contact-tel:focus {
+  color: #2196f3;
+  text-decoration: none;
+}
+
 
 .title {
   font-family: Roboto;
@@ -75,6 +197,15 @@ header {
   letter-spacing: 0.06em;
   text-align: center;
   color: #ffffff;
+  display: flex;
+  border: 1px none;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 30px;
+  margin-left: 452px;
+  margin-right: 452px;
+
+ 
 }
 
 .button {
@@ -87,7 +218,35 @@ header {
   color: #ffffff;
   cursor: pointer;
   background-color: #2196f3;
+  width: 200px;
+  height: 50px;
+  border: 1px none;
+  box-sizing: border-box;
 }
+
+.box-description {
+  border: 1px none;
+  width: 1170px;
+  display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.description {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 30px;
+   margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 
 .paragraf-title {
   font-family: Roboto;
@@ -96,6 +255,11 @@ header {
   line-height: 1, 14285714;
   letter-spacing: 0.03em;
   text-align: left;
+  display: flex;
+  border: 1px none;
+  justify-content: flex-start;
+  width: 270px;
+  margin-top: 94px;
 }
 
 .paragraf {
@@ -106,10 +270,67 @@ header {
   letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
+  display: flex;
+  border: 1px none;
+  justify-content:flex-end;
+  width: 270px;
+  margin-bottom: 94px;
+  
 }
 
+.box-picture {
+  display: flex;
+  border: 1px none;
+  width: 1170px;
+  margin-left: 215px;
+  flex-direction: column;
+}
+.picture {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0px;
+  padding-right: 0px;
+  gap: 30px;
+}
 .section-background {
   background-color: #f5f4fa;
+  width: 1600px;
+  height: 648px;
+  border: 1px solid none;
+  margin-top: 94px;
+}
+
+.team {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 50px;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-bottom: 94px;
+  gap:30px;
+}
+
+.team-box {
+  display: block;
+  border: 1px none;
+  border-radius: 4px;
+box-shadow: 0px 2px 1px 0px #00000033;
+box-shadow: 0px 1px 1px 0px #00000024;
+box-shadow: 0px 1px 3px 0px #0000001F;
+  background-color: #ffffff;
+  width: 270px;
+  height: 368px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  gap: 30px;
+
 }
 .section-title {
   font-family: Roboto;
@@ -118,6 +339,9 @@ header {
   line-height: 1, 16666667;
   letter-spacing: 0.03em;
   text-align: center;
+padding-top: 0px;
+padding-bottom: 50px;
+margin: 0px;
 }
 
 .signature-name {
@@ -128,6 +352,8 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
   display: block;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .signature-job {
@@ -139,6 +365,7 @@ header {
   text-align: center;
   color: #757575;
   display: block;
+  padding-bottom: 30px;
 }
 
 .address {
@@ -149,8 +376,117 @@ header {
   line-height: 1, 71428571;
   letter-spacing: 0.03em;
   text-align: left;
+  padding-left: 215px;
+  padding-bottom: 9px;
 }
 
+.buttons-box {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+.buttons-first {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1, 625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border: 1px none;
+  border-radius: 4px;
+  width: 121px;
+  height: 38px;
+  margin-top: 174px;
+}
+.buttons-first:hover,
+.buttons-first:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.buttons-second {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1, 625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border: 1px none;
+  border-radius: 4px;
+  width: 93px;
+  height: 38px;
+  margin-top: 174px;
+}
+.buttons-second:hover,
+.buttons-second:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.buttons-third {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1, 625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border: 1px none;
+  border-radius: 4px;
+  width: 114px;
+  height: 38px;
+  margin-top: 174px;
+}
+.buttons-third:hover,
+.buttons-third:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.buttons-forth {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1, 625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border: 1px none;
+  border-radius: 4px;
+  width: 91px;
+  height: 38px;
+  margin-top: 174px;
+}
+.buttons-forth:hover,
+.buttons-forth:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.buttons-fith {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1, 625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  border: 1px none;
+  border-radius: 4px;
+  width: 121px;
+  height: 38px;
+  margin-top: 174px;
+}
+.buttons-fith:hover,
+.buttons-fith:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
 .buttons {
   font-family: Roboto;
   font-size: 16px;
@@ -160,6 +496,8 @@ header {
   text-align: center;
   cursor: pointer;
   background-color: #f5f4fa;
+  border: 1px none;
+  border-radius: 4px;
 }
 
 .buttons:hover,
@@ -168,6 +506,10 @@ header {
   background-color: #2196f3;
 }
 
+.button-first {
+  width: 121px;
+  height: 38px;
+}
 .image-signature {
   font-family: Roboto;
   font-size: 18px;
@@ -176,6 +518,13 @@ header {
   letter-spacing: 0.06em;
   text-align: left;
   display: block;
+  border: 1px none;
+  width: 322px;
+  height: 36px;
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 4px;
 }
 
 .image-type {
@@ -187,6 +536,13 @@ header {
   text-align: left;
   color: #757575;
   display: block;
+  border: 1px none
+  width: 322px;
+  height: 30px;
+  margin-left: 24px;
+  margin-top: 4px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
 
 .footer-contact {
@@ -198,7 +554,11 @@ header {
   text-align: left;
   text-decoration: none;
   color: #ffffff60;
+  display: block;
+  flex-direction: column;
   /* nie wiem na jaki kolor ma zmieniać się kontakt po najechaniu kursorem C5 */
+  padding-left: 215px;
+  padding-bottom: 9px;
 }
 
 footer {
@@ -206,4 +566,30 @@ footer {
   position: absolute;
   width: 1600px;
   height: 252px;
+}
+
+.
+
+.container-portfolio {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
+.pictures {
+  list-style: none;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.pictures-box {
+  border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
+  
 }

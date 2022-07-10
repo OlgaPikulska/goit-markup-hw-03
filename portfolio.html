@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zadanie domowe #2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href=css/styles.css>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,44 +18,56 @@
     />
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav>
-        <ul>
+        <ul class="menu">
           <li>
-            <h2>
+            <h2 class="logo-place-header">
               <a href="index.html" class="logo">
                 <span class="first-word">Web</span>
                 <span class="second-word">Studio</span>
               </a>
             </h2>
           </li>
-          <li><a href="/Agencja" class="nav">Agencja</a></li>
-          <li><a href="portfolio.html" class="nav">Portfolio</a></li>
-          <li><a href="/Kontakt" class="nav">Kontakt</a></li>
+          <li><a href="/Agencja" class="nav-first">Agencja</a></li>
+          <li>
+            <a href="portfolio.html" class="nav-second">Portfolio</a>
+          </li>
+          <li><a href="/Kontakt" class="nav-third">Kontakt</a></li>
         </ul>
       </nav>
       <div>
         <ul>
-          <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-          <li><a href="tel:+48111111111" class="contact">+48 111 111 111</a></li>
+          <li class="menu">
+            <a href="mailto:info@devstudio.com" class="contact-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="menu">
+            <a href="tel:+48111111111" class="contact-tel">+48 111 111 111</a>
+          </li>
         </ul>
       </div>
     </header>
-    <main>
+    <main class="container-portfolio">
       <div>
-        <ul>
-          <li><button type="button" class="buttons">Wszystkie</button></li>
-          <li><button type="button" class="buttons">Strony</button></li>
-          <li><button type="button" class="buttons">Aplikacje</button></li>
-          <li><button type="button" class="buttons">Dizajn</button></li>
-          <li><button type="button" class="buttons">Marketing</button></li>
+        <ul class="buttons-box">
+          <li>
+            <button type="button" class="buttons-first">Wszystkie</button>
+          </li>
+          <li><button type="button" class="buttons-second">Strony</button></li>
+          <li>
+            <button type="button" class="buttons-third">Aplikacje</button>
+          </li>
+          <li><button type="button" class="buttons-forth">Dizajn</button></li>
+          <li><button type="button" class="buttons-fith">Marketing</button></li>
         </ul>
       </div>
 
       <div>
-        <ul>
+        <ul class="pictures">
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/technocrack.jpg"
                 alt="Widok przykładowej strony na laptopie"
@@ -66,7 +82,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/grafika_new_orlean_vs_golden_star.jpg"
                 alt="Koszykarze"
@@ -74,14 +90,16 @@
                 height="294"
               />
               <figcaption>
-                <span class="image-signature">Grafika New Orlean vs Golden Star</span>
+                <span class="image-signature"
+                  >Grafika New Orlean vs Golden Star</span
+                >
                 <span class="image-type"> Dizajn</span>
               </figcaption>
             </figure>
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/restauracja_seafood.jpg"
                 alt="Logo restauracji przedstawiające rybę"
@@ -96,7 +114,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/projekt_prime.jpg"
                 alt="Czarne duże słuchawki bezprzewodowe na białym tle"
@@ -111,7 +129,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/projekt_boxes.jpg"
                 alt="Dwa pudełka: białe i pomarańczowe na białym tle"
@@ -126,7 +144,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/inspiration_has_no_borders.jpg"
                 alt="Monitor Mac z otwartą czarną stroną internetową"
@@ -141,7 +159,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/magazyn_limited_edition.jpg"
                 alt="Otwarta książka na białym tle"
@@ -156,7 +174,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/projekt_lab.jpg"
                 alt="Biała metka wisząca na sznurku"
@@ -171,7 +189,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="pictures-box">
               <img
                 src="images/growing_business.jpg"
                 alt="Ręce pracującego na laptopie mężczyzny"
@@ -188,14 +206,16 @@
       </div>
     </main>
     <footer>
-      <h2>
+      <h2 class="logo-place">
         <a href="index.html" class="logo">
           <span class="first-word">Web</span>
           <span class="second-word">Studio</span>
         </a>
       </h2>
       <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a href="mailto:info@example.com" class="footer-contact">info@example.com</a>
+      <a href="mailto:info@example.com" class="footer-contact"
+        >info@example.com</a
+      >
       <a href="tel:+48111111111" class="footer-contact">+48 111 111 111</a>
     </footer>
   </body>

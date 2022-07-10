@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zadanie domowe #1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,26 +18,34 @@
     />
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav>
-        <ul>
+        <ul class="menu">
           <li>
-            <h2>
+            <h2 class="logo-place-header">
               <a href="index.html" class="logo">
                 <span class="first-word">Web</span>
                 <span class="second-word">Studio</span>
               </a>
             </h2>
           </li>
-          <li><a href="/Agencja" class="nav">Agencja</a></li>
-          <li><a href="portfolio.html" class="nav">Portfolio</a></li>
-          <li><a href="/Kontakt" class="nav">Kontakt</a></li>
+          <li><a href="/Agencja" class="nav-first">Agencja</a></li>
+          <li>
+            <a href="portfolio.html" class="nav-second">Portfolio</a>
+          </li>
+          <li><a href="/Kontakt" class="nav-third">Kontakt</a></li>
         </ul>
       </nav>
       <div>
         <ul>
-          <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-          <li><a href="tel:+48111111111" class="contact">+48 111 111 111</a></li>
+          <li class="menu">
+            <a href="mailto:info@devstudio.com" class="contact-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="menu">
+            <a href="tel:+48111111111" class="contact-tel">+48 111 111 111</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -43,15 +55,15 @@
         <h1 class="title">EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
         <button type="button" class="button">Zamów usługę</button>
       </div>
-      <div>
-        <ul>
+      <div class="box-description">
+        <ul class="description">
           <li>
             <h2 class="paragraf-title">LOREM IPSUM</h2>
             <pre class="paragraf">
-            Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit. Nam vel arcu sem. Sed 
-            non sodales dui. Interdum et malesuada</pre
-            >
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nam vel arcu sem. Sed 
+              non sodales dui. Interdum et malesuada
+            </pre>
           </li>
 
           <li>
@@ -81,9 +93,9 @@
         </ul>
       </div>
 
-      <section>
+      <section class="box-picture">
         <h2 class="section-title">Czym się zajmujemy</h2>
-        <ul>
+        <ul class="picture">
           <li>
             <img
               src="images/img.jpg"
@@ -116,9 +128,9 @@
       <section class="section-background">
         <h2 class="section-title">Nasz zespół</h2>
 
-        <ul>
+        <ul class="team">
           <li>
-            <figure>
+            <figure class="team-box">
               <img
                 src="images/john_doe.jpg"
                 alt="Zdjęcie Product Designera"
@@ -133,7 +145,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="team-box">
               <img
                 src="images/frontend_developer.jpg"
                 alt="Zdjęcie Frontend Developera"
@@ -148,7 +160,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="team-box">
               <img
                 src="images/marketing.jpg"
                 alt="Zdjęcie Pracownika Marketingu"
@@ -163,7 +175,7 @@
           </li>
 
           <li>
-            <figure>
+            <figure class="team-box">
               <img
                 src="images/UI_Designer.jpg"
                 alt="Zdjęcie UI Designera"
@@ -181,14 +193,16 @@
     </main>
 
     <footer>
-      <h2>
+      <h2 class="logo-place">
         <a href="index.html" class="logo">
           <span class="first-word">Web</span>
           <span class="second-word">Studio</span>
         </a>
       </h2>
       <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a href="mailto:info@example.com" class="footer-contact">info@example.com</a>
+      <a href="mailto:info@example.com" class="footer-contact"
+        >info@example.com</a
+      >
       <a href="tel:+48111111111" class="footer-contact">+48 111 111 111</a>
     </footer>
   </body>
